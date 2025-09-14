@@ -1,0 +1,513 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: #F8F8F8;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: #F8F8F8;
+    padding: 0.1px;
+}
+.nav{
+    height: 11vh;
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.nav h3 i{
+    display: none;
+}
+.nav h2{
+    font-size: 20px;
+    font-weight: 500;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav h2:nth-child(4){
+    width: 30%;
+}
+.nav h1{
+    width: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Monument Extended', sans-serif;
+    font-size: 37px;
+    letter-spacing: -2px;
+}
+.centre{
+    width: 100%;
+    height: 84%;
+    /* background-color: red; */
+    padding: 2.5vw;
+}
+.vid{
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+    position: relative;
+}
+.vid video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.over1{
+    width: 100%;
+    height: 60%;
+    /* background-color: magenta; */
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw;
+}
+.over1 h1{
+    font-family: 'Monument Extended', sans-serif;
+    font-size: 3vw;
+    color: white;
+}
+.number{
+    font-size: 1.5vw;
+    color: white;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.over2{
+    width: 100%;
+    /* background-color: pink; */
+    position: absolute;
+    bottom: 0;
+    padding: 3vw;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid white;
+    color: white;
+}
+.over2 h1{
+    font-size: 20px;
+    font-weight: 100;
+}
+.over2 i{
+    font-size: 33px;
+}
+.scroll{
+    width: 100%;
+    height: 40vh;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    padding: 2.5vw;
+    animation-name: anime;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.scroll img{
+    height: 100%;
+    border-radius: 50%;
+    width: 14%;
+    object-fit: cover;
+    margin: 1.5vw;
+}
+
+@keyframes anime{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.alphabet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    height: 10vh;
+    width: 100%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin: 6vh 0;
+}
+.alphabet h5{
+    margin-right: 1vw;
+    font-size: 1.5vw;
+    border-bottom: 2px solid black;
+    font-weight: 100;
+}
+.alphabet h4{
+    padding: 0.6vw;
+    border-radius: 50%;
+    font-weight: 100;
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+.alphabet h4:hover{
+    border: 1px solid black;
+}
+.page2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 10vw;
+    align-items: center;
+}
+.page2-left{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Z2lybCUyMG1vZGVsfGVufDB8fDB8fHww);
+    background-position: cover;
+}
+.page2-right{
+    width: 45%;
+    height: 100%;
+}
+.page2-right img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-content{
+    font-size: 1.6vw;
+    font-weight: bold;
+    padding: 1vw;
+    margin-right: 1.5vw;
+}
+.right-content{
+    font-size: 1.3vw;
+}
+.page2-right p{
+    width: 50%;
+}
+.page3{
+    height: 100%;
+    width: 100;
+    padding: 5vw;
+}
+.page3>h1{
+    font-family: 'Monument Extended', sans-serif;
+    text-align: center;
+    font-size: 3vw;
+}
+.elem{
+    /* background-color: red; */
+    width: 100%;
+    height: 22%;
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw;
+    position: relative;
+}
+.elem h4{
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: 500;
+}
+.elem-part h5{
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: 100;
+}
+.elem-part p{
+    text-transform: uppercase;
+    font-size: 0.8vw;
+    font-weight: bolder;
+}
+.elem:nth-last-child(1){
+    border-bottom: 2px solid black;
+}
+.elem img{
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    left: 20%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0;
+    transition: all ease 1s;
+}
+.elem:hover img{
+    opacity: 1;
+    left: 40%;
+}
+
+.marque{
+    width: 100%;
+    padding: 1.6vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.marque h1{
+    display: inline-block;
+    margin-right: 16px;
+    font-size: 3vw;
+    -webkit-text-stroke:2px black;
+    color: transparent;
+    font-family: 'Monument Extended', sans-serif;
+    text-transform: uppercase;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    letter-spacing: 2px;
+}
+
+@keyframes move{
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(calc(-100% - 20px));
+    }
+}
+
+
+.footer{
+    width: 100%;
+    height: 40%;
+    /* background-color: red; */
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 40% 60%;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+}
+.foot1{
+    /* background-color: blue; */
+    grid-column: 1/2;
+    grid-row: 1/3;
+    padding: 3vw;
+    margin-bottom :5vh;
+    border-bottom: 4px solid black;
+}
+.foot1-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.foot1-content h1{
+    font-family: 'Monument Extended', sans-serif;
+}
+.foot1-content h2{
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+}
+.foot2{
+    /* background-color: aqua; */
+    grid-column: 2/3;
+    grid-row: 1/3;
+    margin-bottom: 5vh;
+    border-right: 4px solid black;
+    border-left: 4px solid black;
+    border-bottom: 4px solid black;
+    padding: 3vw;
+}
+.foot2 h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+.foot3{
+    /* background-color: green; */
+    grid-row: 1/2;
+    margin-bottom: 2px solid black;
+    padding: 3vw;
+}
+.foot3 h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+.foot4{
+    /* background-color: purple; */
+    margin-bottom: 5vh;
+    margin-bottom: 2px solid black;
+    padding: 3vw;
+    border-bottom: 4px solid black;
+    border-top: 4px solid black;
+}
+.foot4 h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+
+
+
+
+@media (max-width:600px){
+    .nav{
+    height: 10vh;
+    padding: 0 5vw;
+}
+.nav h2{
+    display: none;
+}
+.nav h1{
+    width: 50%;
+}
+.nav h3 i{
+    display: inline-block;
+}
+
+.alphabet{
+    height: 7vh;
+    overflow-x: scroll;
+    margin-top: 15px;
+}
+.alphabet h4{
+    font-size: 1.5vw;
+}
+
+.over1{
+    height: 30%;
+}
+.over1 h1{
+    font-size: 9vw;
+}
+.number{
+    font-size: 5vw;
+}
+.over2{
+    height: fit-content;
+    padding: 5vw;
+}
+.scroll{
+    height: 12vh;
+    padding-top: 2vh;
+}
+
+.page2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding:1vw;
+    align-items: center;
+    flex-direction: column;
+}
+.page2-left{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 3vh;
+}
+.page2-right{
+    width: 100%;
+    height: 50%;
+    margin-top: 5vw;
+}
+.page2-right img{
+    height: 70%;
+    object-fit: cover;
+    object-position: 0 30%;
+    border-radius: 2vh;
+}
+.content{
+    padding: 1.5vh;
+}
+.left-content{
+    font-size: 5vw;
+}
+.right-content{
+    font-size: 3vw;
+}
+.page3{
+    height: 40%;
+}
+.page3>h1{
+    font-size: 6vw;
+}
+.elem{
+    height: 22%;
+}
+.elem h4{
+    font-size: small;
+}
+.elem-part h5{
+    font-size: small;
+}
+
+.marque{
+    padding: 1.6vw;
+    margin-top: 2vh;
+}
+.marque h1{
+    font-size: 6.5vw;
+}
+
+.footer{
+    height: 20%;
+}
+.foot1-content{
+    gap: 3vh;
+    flex-direction: column;
+}
+.foot1-content h1{
+    font-family: 'Monument Extended', sans-serif;
+    font-size: 6vw;
+}
+.foot1-content h2{
+    font-size: 3vw;
+}
+.foot2{
+    padding: 1.3vw;
+    position: relative;
+}
+.foot2 h1{
+    font-size: 3vw;
+    top: 40%;
+    position: absolute;
+}
+.foot3{
+    padding: 5vw;
+}
+.foot3 h1{
+    font-size: 2vw;
+}
+.foot4 h1{
+    font-size: 2vw;
+}
+}
